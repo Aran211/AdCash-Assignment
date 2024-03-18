@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <title>Bitcoin Wallet REST API</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Bitcoin Wallet REST API</h1>
+            <div class="container">
+        <p>Wallet Balance:</p>
+        <p>BTC: {{ btc_balance }}</p>
+        <p>EUR: {{ eur_balance }}</p>
+        <hr>
+        <h2>Transactions:</h2>
+        <ul>
+            {% for transaction in transactions %}
+                <li>
+                    Transaction ID: {{ transaction.id }},
+                    Amount: {{ transaction.amount }},
+                    Spent: {{ transaction.spent }},
+                    Created At: {{ transaction.created_at }}
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    </div>
+</body>
+</html>
