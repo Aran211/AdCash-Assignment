@@ -1,9 +1,6 @@
-The Bitcoin Wallet REST API project is a web application built using Flask and Python.
+The Bitcoin Wallet REST API project is a web application built using Flask and Python. This was a new task for me since the python course at school didn't cover OOP or api-s. I learned OOP in Java, but a couple of youtube videos and examples gave me a good idea.
+To test the API-s and get to know what exatly they where I used postman.
 
-
-
-How to Use:
-Setup the environment:
 
 I used Pycharm when creating this project so I suggest to use that.
 First thing after opening the project also open PgAdmin4 and create a PostgreSQL database, and change the config.py file that it can connect to the database.
@@ -20,8 +17,6 @@ Now in pyCharm if the http is clicked it automatically opens the page, but if ot
 Now the pretty simple and bland page should show the Bitcoin and Eur balance and below that the transactions. I also included the script that I used for sample data in the models.py file. I inserted 1000 samples so the page is pretty long.
 Now the application should run fine and show my work.:)
 The html and css files should work fine and don't need to be touched.
-
-
 
 
 Used sources:
